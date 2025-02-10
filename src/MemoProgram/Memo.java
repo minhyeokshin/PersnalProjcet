@@ -26,7 +26,7 @@ public class Memo {
                 ReadMemo.readMemo();
                 break;
             case 3:
-                SearchMemo.SearchMemo();
+                SearchMemo.searchMemo();
                 break;
             case 4:
                 System.out.println("프로그램 종료.");
