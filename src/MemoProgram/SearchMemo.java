@@ -3,10 +3,11 @@ package MemoProgram;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 
-public class SearchMemo extends Memo {
-    public static void searchMemo() {
+public class SearchMemo{
+    public static void searchMemo(Scanner in) {
         boolean search = false;
         System.out.println("\n검색할 메모:");
         String str = in.nextLine();

@@ -41,10 +41,10 @@ public class Memo {
                 WriteMemo.writeMemo(in);
                 break;
             case 2:
-                ReadMemo.readMemo();
+                ReadMemo.readMemo(in);
                 break;
             case 3:
-                SearchMemo.searchMemo();
+                SearchMemo.searchMemo(in);
                 break;
             case 4:
                 System.out.println("프로그램 종료.");
