@@ -5,17 +5,34 @@ import java.util.Scanner;
 
 public class WriteMemo {
 
-    public static void writeMemo(Scanner scanner) {
-        System.out.print("메모 입력: ");
-        String memo = scanner.nextLine();
+    public static void writeMemo(Scanner in) {
+        System.out.println("기존 메모에 덮어씌우기(Y/N)");
+        String input =in.nextLine();
+        if ((input.equals("y")) || (input.equals("Y"))){
+            System.out.print("메모 입력: ");
+            String memo = in.nextLine();
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileConstants.FILE_NAME, true))) {
-            writer.write(memo);
-            writer.newLine();
-            System.out.println("메모가 저장되었습니다.");
-        } catch (IOException e) {
-            System.out.println("메모 저장 중 오류 발생.");
-            e.printStackTrace();
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileConstants.FILE_NAME,false))) {
+                writer.write(memo);
+                writer.newLine();
+                System.out.println("메모가 저장되었습니다.");
+            } catch (IOException e) {
+                System.out.println("메모 저장 중 오류 발생.");
+                e.printStackTrace();
+            }
+        }
+        else {
+            System.out.print("메모 입력: ");
+            String memo = in.nextLine();
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileConstants.FILE_NAME, true))) {
+                writer.write(memo);
+                writer.newLine();
+                System.out.println("메모가 저장되었습니다.");
+            } catch (IOException e) {
+                System.out.println("메모 저장 중 오류 발생.");
+                e.printStackTrace();
+            }
         }
     }
 }

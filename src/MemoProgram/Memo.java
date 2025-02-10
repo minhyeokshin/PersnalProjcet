@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 public class Memo {
 
+    static Scanner in = new Scanner(System.in);
     public void run(){
-    Scanner in = new Scanner(System.in);
+//    Scanner in = new Scanner(System.in);
         while (true) {
         System.out.println("\n메모장 프로그램");
         System.out.println("1. 메모 작성");

@@ -5,6 +5,5 @@ public class MemoProgram {
 
         new Memo().run();
 
-
     }
 }
