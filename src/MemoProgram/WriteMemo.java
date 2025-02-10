@@ -12,7 +12,7 @@ public class WriteMemo {
             System.out.print("메모 입력: ");
             String memo = in.nextLine();
 
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileConstants.FILE_NAME,false))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(Memo.getFileName(),false))) {
                 writer.write(memo);
                 writer.newLine();
                 System.out.println("메모가 저장되었습니다.");
@@ -25,7 +25,7 @@ public class WriteMemo {
             System.out.print("메모 입력: ");
             String memo = in.nextLine();
 
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileConstants.FILE_NAME, true))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(Memo.getFileName(), true))) {
                 writer.write(memo);
                 writer.newLine();
                 System.out.println("메모가 저장되었습니다.");
