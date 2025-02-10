@@ -12,7 +12,8 @@ public class Memo {
         System.out.println("\n메모장 프로그램");
         System.out.println("1. 메모 작성");
         System.out.println("2. 메모 보기");
-        System.out.println("3. 종료");
+        System.out.println("3. 검색");
+        System.out.println("4. 종료");
         System.out.print("선택: ");
         int choice = in.nextInt();
         in.nextLine(); // 개행 문자 제거
@@ -25,6 +26,9 @@ public class Memo {
                 ReadMemo.readMemo();
                 break;
             case 3:
+                SearchMemo.SearchMemo();
+                break;
+            case 4:
                 System.out.println("프로그램 종료.");
                 return;
             default:
