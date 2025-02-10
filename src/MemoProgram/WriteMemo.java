@@ -8,7 +8,7 @@ public class WriteMemo {
     public static void writeMemo(Scanner in) {
         System.out.println("기존 메모에 덮어씌우기(Y/N)");
         String input =in.nextLine();
-        if ((input.equals("y")) || (input.equals("Y"))){
+        if (input.equalsIgnoreCase("y")){
             System.out.print("메모 입력: ");
             String memo = in.nextLine();
 

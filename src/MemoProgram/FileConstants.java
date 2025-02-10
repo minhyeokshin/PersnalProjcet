@@ -1,5 +1,5 @@
 package MemoProgram;
 
 public class FileConstants {
-    public static final String FILE_NAME = "memoTest.txt";
+    public static String FILE_NAME = "memoTest2.txt";
 }

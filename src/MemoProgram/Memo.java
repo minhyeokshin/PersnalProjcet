@@ -8,7 +8,12 @@ public class Memo {
 
     static Scanner in = new Scanner(System.in);
     public void run(){
-//    Scanner in = new Scanner(System.in);
+        System.out.println("새로운 파일에 입력하시겠습니까?(Y/N)");
+        String newFile = in.nextLine();
+        if (newFile.equalsIgnoreCase("Y")){
+            System.out.printf("새로운 파일명을 입력해주세요.(ex.  Test.txt) : ");
+            FileConstants.FILE_NAME= in.nextLine();
+        }
         while (true) {
         System.out.println("\n메모장 프로그램");
         System.out.println("1. 메모 작성");
