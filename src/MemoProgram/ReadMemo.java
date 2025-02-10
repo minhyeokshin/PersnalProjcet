@@ -1,5 +1,6 @@
 package MemoProgram;
 //메모장 읽어오기 method
+//ArrayList 리펙토링
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
